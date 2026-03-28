@@ -21,7 +21,7 @@
 
    ​		所以本质上，这是一个“前序遍历”，而不是所谓的“后序遍历”。只有当你的各个节点以“左->右->中”的次序依次出现在迭代的loop当中时，它才是真正的后序遍历，就像官解那样。贴个我个人的版本。
 
-   ```
+   ```c
    class Solution {
        public List<Integer> postorderTraversal(TreeNode root) {
            List<Integer> ans = new ArrayList<>();
