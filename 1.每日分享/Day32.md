@@ -1,8 +1,30 @@
 ## Day32_Tuesday_Week6_3.31
 
-1. **标题** -- gzh
+1. **TCP连接的建立与释放** -- gzh
 
-   
+   ### 5.3.2 TCP的运输连接管理
+
+   ------
+
+   #### 5.3.2.(1)TCP的连接建立
+
+   ![image-20241105225356560](D:/Typora%20Picture/image-20241105225356560.png)
+
+   ![image-20241105225408375](D:/Typora%20Picture/image-20241105225408375.png)
+
+   ![image-20241105225420462](D:/Typora%20Picture/image-20241105225420462.png)
+
+   ------
+
+   #### 5.3.2.(2)"四报文挥手"释放TCP连接
+
+   ![image-20241105230905757](D:/Typora%20Picture/image-20241105230905757.png)
+
+   ![image-20241105230919415](D:/Typora%20Picture/image-20241105230919415.png)
+
+   ![image-20241105230939246](D:/Typora%20Picture/image-20241105230939246.png)
+
+   ![image-20230510215731564](D:/Typora%20Picture/image-20230510215731564.png)
 
 2. **标题** -- ywj
 
@@ -77,7 +99,5 @@
    size_t guard_size = 1024 * 4;
    pthread_attr_setguardsize(&attr, guard_size);
    ```
-
-   
 
 4. **标题** -- lzw
