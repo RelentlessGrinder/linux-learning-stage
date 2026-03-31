@@ -156,7 +156,82 @@
 
    
 
-3. **标题** -- lw
+3. **pthread 库函数及相关工具函数** -- lw
+
+   ### . 线程创建与基础操作
+
+   - `pthread_create` – 创建线程  
+   - `pthread_self` – 获取当前线程 ID  
+   - `pthread_exit` – 主动退出线程  
+   - `pthread_join` – 等待线程结束并回收资源  
+   - `pthread_cancel` – 请求取消另一个线程  
+   - `pthread_testcancel` – 手动添加取消点
+
+   ---
+
+   ### 2. 线程清理函数
+
+   - `pthread_cleanup_push` – 向清理栈压入一个清理函数  
+   - `pthread_cleanup_pop` – 弹出清理栈顶的函数（可选择执行）
+
+   ---
+
+   ### 3. 互斥锁（Mutex）
+
+   - `pthread_mutex_init` – 初始化互斥锁  
+   - `pthread_mutex_destroy` – 销毁互斥锁  
+   - `pthread_mutex_lock` – 加锁（阻塞）  
+   - `pthread_mutex_trylock` – 非阻塞尝试加锁  
+   - `pthread_mutex_unlock` – 解锁  
+
+   - `pthread_mutexattr_init` – 初始化互斥锁属性  
+   - `pthread_mutexattr_destroy` – 销毁互斥锁属性  
+   - `pthread_mutexattr_settype` – 设置互斥锁类型（如普通锁、检错锁、递归锁）
+
+   ---
+
+   ### 4. 自旋锁（Spin Lock）
+
+   - `pthread_spin_init` – 初始化自旋锁  
+   - `pthread_spin_lock` – 获取自旋锁（循环等待）  
+   - `pthread_spin_unlock` – 释放自旋锁  
+   - `pthread_spin_destroy` – 销毁自旋锁
+
+   ---
+
+   ### 5. 读写锁（RWLock）
+
+   - `pthread_rwlock_rdlock` – 加读锁  
+   - `pthread_rwlock_wrlock` – 加写锁  
+   - `pthread_rwlock_unlock` – 解锁（读或写）  
+     （注：读写锁的初始化和销毁函数未在笔记中详列，实际标准库还有 `pthread_rwlock_init` / `pthread_rwlock_destroy`）
+
+   ---
+
+   ### 6. 条件变量（Condition Variable）
+
+   - `pthread_cond_init` – 初始化条件变量  
+   - `pthread_cond_destroy` – 销毁条件变量  
+   - `pthread_cond_wait` – 等待条件（与互斥锁配合）  
+   - `pthread_cond_timedwait` – 带超时的等待  
+   - `pthread_cond_signal` – 唤醒一个等待线程  
+   - `pthread_cond_broadcast` – 唤醒所有等待线程
+
+   ---
+
+   ### 7. 常用辅助函数（非 pthread 但配套使用）
+
+   - `gettimeofday` – 获取微秒级时间（用于计时）  
+   - `sleep` – 秒级睡眠（取消点函数之一）  
+   - `printf`、`read`、`write` 等 I/O 函数也是常见的取消点
+
+   ---
+
+   ### 8. 常用宏与常量
+
+   - `PTHREAD_MUTEX_INITIALIZER` – 静态初始化互斥锁  
+   - `PTHREAD_COND_INITIALIZER` – 静态初始化条件变量  
+   - `PTHREAD_CANCELED` – 线程被取消时 `pthread_join` 返回的值
 
    
 
