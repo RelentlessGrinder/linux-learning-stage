@@ -26,11 +26,19 @@
 
    ![image-20230510215731564](D:/Typora%20Picture/image-20230510215731564.png)
 
-2. **标题** -- ywj
+2. **IP首部协议字段值** -- gzh
+
+   ![image-20241110214021391](..\0.TyporaPicture\image-20241110214021391.png)
+
+3. **各应用程序的运输层端口号** -- gzh
+
+   ![image-20241110213923076](../0.TyporaPicture/image-20241110213923076.png)
+
+4. **标题** -- ywj
 
    
 
-3. **设置线程的属性** -- lw
+5. **设置线程的属性** -- lw
 
    **一、设置线程属性核心思路**
 
@@ -100,4 +108,4 @@
    pthread_attr_setguardsize(&attr, guard_size);
    ```
 
-4. **标题** -- lzw
+6. **标题** -- lzw
