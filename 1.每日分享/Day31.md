@@ -8,35 +8,35 @@
 
    1. 系统发生死锁时，必然有两个或两个以上进程处于阻塞态
    2. 银行家算法只能判断系统是否处于安全状态，而不能判断是否处于死锁状态（能判断为不死锁状态即安全状态）
-   3. ![image-20241205150622137](Typora_pics/image-20241205150622137.png?lastModify=1774852216)
+   3. ![image-20241205150622137](../0.TyporaPicture/image-20241205150622137.png?lastModify=1774852216)
 
    ### 2.4.1 死锁的概念
 
-   ![image-20241016192535807](Typora_pics/image-20241016192535807.png?lastModify=1774852216)
+   ![image-20241016192535807](../0.TyporaPicture/image-20241016192535807.png?lastModify=1774852216)
 
    
 
    #### 1.什么是死锁
 
-   ![image-20241016192634082](Typora_pics/image-20241016192634082.png?lastModify=1774852216)
+   ![image-20241016192634082](../0.TyporaPicture/image-20241016192634082.png?lastModify=1774852216)
 
    
 
    #### 2.死锁、饥饿、死循环的区别
 
-   ![image-20241016192707028](Typora_pics/image-20241016192707028.png?lastModify=1774852216)
+   ![image-20241016192707028](../0.TyporaPicture/image-20241016192707028.png?lastModify=1774852216)
 
    
 
    #### 3.死锁产生的必要条件
 
-   ![image-20241016192724045](Typora_pics/image-20241016192724045.png?lastModify=1774852216)
+   ![image-20241016192724045](../0.TyporaPicture/image-20241016192724045.png?lastModify=1774852216)
 
    
 
    #### 4.什么时候会发生死锁
 
-   ![image-20241016192806059](Typora_pics/image-20241016192806059.png?lastModify=1774852216)
+   ![image-20241016192806059](../0.TyporaPicture/image-20241016192806059.png?lastModify=1774852216)
 
    
 
@@ -44,37 +44,37 @@
 
    
 
-   ![image-20241016192856157](Typora_pics/image-20241016192856157.png?lastModify=1774852216)
+   ![image-20241016192856157](../0.TyporaPicture/image-20241016192856157.png?lastModify=1774852216)
 
    
 
    #### 1.预防死锁——破坏死锁产生的四个必要条件中的一个或几个
 
-   ![image-20241016192915065](Typora_pics/image-20241016192915065.png?lastModify=1774852216)
+   ![image-20241016192915065](../0.TyporaPicture/image-20241016192915065.png?lastModify=1774852216)
 
    
 
    ##### （1）破坏互斥条件
 
-   ![image-20241016193000590](Typora_pics/image-20241016193000590.png?lastModify=1774852216)
+   ![image-20241016193000590](../0.TyporaPicture/image-20241016193000590.png?lastModify=1774852216)
 
    
 
    ##### （2）破坏不剥夺条件
 
-   ![image-20241016193014981](Typora_pics/image-20241016193014981.png?lastModify=1774852216)
+   ![image-20241016193014981](../0.TyporaPicture/image-20241016193014981.png?lastModify=1774852216)
 
    
 
    ##### （3）破坏请求和保持条件
 
-   ![image-20241016193032967](Typora_pics/image-20241016193032967.png?lastModify=1774852216)
+   ![image-20241016193032967](../0.TyporaPicture/image-20241016193032967.png?lastModify=1774852216)
 
    
 
    ##### （4）破坏循环等待条件
 
-   ![image-20241016193051272](Typora_pics/image-20241016193051272.png?lastModify=1774852216)
+   ![image-20241016193051272](../0.TyporaPicture/image-20241016193051272.png?lastModify=1774852216)
 
    
 
@@ -88,35 +88,35 @@
 
    ##### （1）安全序列、不安全状态及其与死锁的联系——安全性算法（银行家算法的核心）
 
-   ![image-20241016193338412](Typora_pics/image-20241016193338412.png?lastModify=1774852216)
+   ![image-20241016193338412](../0.TyporaPicture/image-20241016193338412.png?lastModify=1774852216)
 
    
 
    ##### （2）银行家算法
 
-   ![image-20241016193502463](Typora_pics/image-20241016193502463.png?lastModify=1774852216)
+   ![image-20241016193502463](../0.TyporaPicture/image-20241016193502463.png?lastModify=1774852216)
 
-   ![image-20241016193529933](Typora_pics/image-20241016193529933.png?lastModify=1774852216)
+   ![image-20241016193529933](../0.TyporaPicture/image-20241016193529933.png?lastModify=1774852216)
 
    
 
    #### 3.死锁的检测与解除——允许死锁的发生，不过操作系统会负责检测出死锁的发生，然后采取某种措施解除死锁
 
-   ![image-20241016193610409](Typora_pics/image-20241016193610409.png?lastModify=1774852216)
+   ![image-20241016193610409](../0.TyporaPicture/image-20241016193610409.png?lastModify=1774852216)
 
    
 
    ##### （1）死锁的检测
 
-   ![image-20241016193708242](Typora_pics/image-20241016193708242.png?lastModify=1774852216)
+   ![image-20241016193708242](../0.TyporaPicture/image-20241016193708242.png?lastModify=1774852216)
 
-   ![image-20241016193908830](Typora_pics/image-20241016193908830.png?lastModify=1774852216)
+   ![image-20241016193908830](../0.TyporaPicture/image-20241016193908830.png?lastModify=1774852216)
 
    
 
    ##### （2）死锁的解除
 
-   ![image-20241016193931134](Typora_pics/image-20241016193931134.png?lastModify=1774852216)
+   ![image-20241016193931134](../0.TyporaPicture/image-20241016193931134.png?lastModify=1774852216)
 
    
 
@@ -124,13 +124,13 @@
 
    #### 1.为什么会发生死锁？产生死锁有什么条件？
 
-   ![image-20241016194142964](Typora_pics/image-20241016194142964.png?lastModify=1774852216)
+   ![image-20241016194142964](../0.TyporaPicture/image-20241016194142964.png?lastModify=1774852216)
 
    
 
    #### 2.有什么办法可以解决死锁问题？
 
-   ![image-20241016194153207](Typora_pics/image-20241016194153207.png?lastModify=1774852216)
+   ![image-20241016194153207](../0.TyporaPicture/image-20241016194153207.png?lastModify=1774852216)
 
    
 
@@ -138,19 +138,19 @@
 
    ### 1.进程与程序的区别与练习
 
-   ![image-20241016194658481](Typora_pics/image-20241016194658481.png?lastModify=1774852216)
+   ![image-20241016194658481](../0.TyporaPicture/image-20241016194658481.png?lastModify=1774852216)
 
    
 
    ### 2.银行家算法的工作原理
 
-   ![image-20241016194713177](Typora_pics/image-20241016194713177.png?lastModify=1774852216)
+   ![image-20241016194713177](../0.TyporaPicture/image-20241016194713177.png?lastModify=1774852216)
 
    
 
    ### 3.进程同步、互斥的区别和联系
 
-   ![image-20241016194734267](Typora_pics/image-20241016194734267.png?lastModify=1774852216)
+   ![image-20241016194734267](../0.TyporaPicture/image-20241016194734267.png?lastModify=1774852216)
 
 2. **标题** -- ywj
 
