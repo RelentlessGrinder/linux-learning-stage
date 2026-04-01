@@ -8,23 +8,23 @@
 
    #### 5.3.2.(1)TCP的连接建立
 
-   ![image-20241105225356560](D:/Typora%20Picture/image-20241105225356560.png)
+   ![image-20241105225356560](../0.TyporaPicture/image-20241105225356560.png)
 
-   ![image-20241105225408375](D:/Typora%20Picture/image-20241105225408375.png)
+   ![image-20241105225408375](../0.TyporaPicture/image-20241105225408375.png)
 
-   ![image-20241105225420462](D:/Typora%20Picture/image-20241105225420462.png)
+   ![image-20241105225420462](../0.TyporaPicture/image-20241105225420462.png)
 
    ------
 
    #### 5.3.2.(2)"四报文挥手"释放TCP连接
 
-   ![image-20241105230905757](D:/Typora%20Picture/image-20241105230905757.png)
+   ![image-20241105230905757](../0.TyporaPicture/image-20241105230905757.png)
 
-   ![image-20241105230919415](D:/Typora%20Picture/image-20241105230919415.png)
+   ![image-20241105230919415](../0.TyporaPicture/image-20241105230919415.png)
 
-   ![image-20241105230939246](D:/Typora%20Picture/image-20241105230939246.png)
+   ![image-20241105230939246](../0.TyporaPicture/image-20241105230939246.png)
 
-   ![image-20230510215731564](D:/Typora%20Picture/image-20230510215731564.png)
+   ![image-20230510215731564](../0.TyporaPicture/image-20230510215731564.png)
 
 2. **IP首部协议字段值** -- gzh
 
